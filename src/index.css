@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Outfit", Georgia, serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-patria-night: #07142B;
+  --color-patria-navy: #0F1E36;
+  --color-patria-wine: #CE1126;
+  --color-patria-blue: #003893;
+  --color-patria-gold: #FCD116;
+  --color-patria-gold-light: #FCD116;
+  --color-patria-gold-soft: #D6A83A;
+  --color-patria-ivory: #FFF8E6;
+  --color-patria-slate: #1F2D44;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-patria-night);
+    color: var(--color-patria-soft-ivory, #f0eae1);
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+}
+
+/* Custom scrollbar matching the patriotic theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-patria-night);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-patria-wine);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-patria-gold);
+}

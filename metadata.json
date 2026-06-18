@@ -1,0 +1,6 @@
+{
+  "name": "archibelardo.ai",
+  "description": "Gestión documental firme por la patria. Una parodia interactiva de sistemas de gestión documental con solemnidad republicana e inteligencia artificial.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
